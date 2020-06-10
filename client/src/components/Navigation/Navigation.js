@@ -12,9 +12,9 @@ function Navigation () {
             </NavLink> */}
             <nav>
                 <div>Plant Diary</div>
-                <NavLink to= "/MyPlants"  className="navigation__location"activeClassName="navigation__location--selected">
+                {/* <NavLink to= "/MyPlants"  className="navigation__location"activeClassName="navigation__location--selected">
                     <h1>My Plants</h1>
-                </NavLink> 
+                </NavLink>  */}
             </nav>
         </header>
     );
