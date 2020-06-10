@@ -1,6 +1,6 @@
 import React from 'react';
 // import './MainVideo.scss';
-// import {Video} from '../../assets/BrainStation Sample Video.mp4';
+// import {Video} from '../../assets/Poppyield';
 
 function MainVideo () {
     return(

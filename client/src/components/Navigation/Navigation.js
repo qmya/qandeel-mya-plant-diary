@@ -1,20 +1,21 @@
 import React from 'react';
 import "./Navigation.scss";
 // import { NavLink } from 'react-router-dom';
-// import Logo from '../../assets/logo/logo-instock.svg';
+import Logo from '../../assets/flower.svg';
 
 function Navigation () {
     
     return ( 
-        <header>
-            {/* <NavLink to="/">
-             <img  src ={Logo} alt="logo of the instock site"/>
-            </NavLink> */}
+        <header className="header">
+            {/* <NavLink to="/"> */}
+             <img src ={Logo} className="header__icon" alt="logo for the plant site"/>
+            {/* </NavLink> */}
+            <h1>Plant Diary</h1>
             <nav>
-                <div>Plant Diary</div>
-                {/* <NavLink to= "/MyPlants"  className="navigation__location"activeClassName="navigation__location--selected">
-                    <h1>My Plants</h1>
-                </NavLink>  */}
+            
+                {/* <NavLink to= "/MyPlants"  className="navigation__location"activeClassName="navigation__location--selected"> */}
+                    <div>My plants</div> 
+                {/* </NavLink>  */}
             </nav>
         </header>
     );
