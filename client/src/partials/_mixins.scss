@@ -1,0 +1,83 @@
+@import './variables';
+@import './typography';
+// MEDIA QUERIES
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: $mobile) {
+        @content;
+    }
+}
+
+// MOBILE FONTS
+@mixin mobile-h1-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+@mixin mobile-h2-subheader {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+}
+
+@mixin mobile-paragraph {
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+}
+
+@mixin mobile-list-or-contact {
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+}
+
+// LAPTOP & TABLET FONTS
+@mixin hero-header {
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 4.25rem;
+}
+
+@mixin h1-header {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 2.75rem;
+}
+
+@mixin h2-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+@mixin h3-subheader {
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+@mixin paragraph {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+@mixin list-or-contact {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+@mixin label {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $silver;
+}
