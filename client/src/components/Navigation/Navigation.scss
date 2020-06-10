@@ -1,4 +1,7 @@
+@import '../../partials/_variables.scss';
+@import '../../partials/_mixins.scss';
 .header {
+    @include mobile-padding;
     background-color: #00796b;
     display: flex;
     align-items: center;
