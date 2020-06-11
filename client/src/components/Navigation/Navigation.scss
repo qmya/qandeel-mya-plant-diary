@@ -5,8 +5,22 @@
     background-color: #00796b;
     display: flex;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
     &__icon {
         width: 45px;
         height: 45px;
+    }
+    &__one {
+        padding-left: 10px;
+        @include mobile-h2-subheader;
+        $font-family-head: 'Quicksand';
+        color: white;
+    }
+    &__two {
+        padding-left: 80px;
+        @include mobile-h2-subheader;
+        $font-family-head: 'Quicksand';
+        color: white;
     }
 }

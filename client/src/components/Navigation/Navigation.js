@@ -10,11 +10,11 @@ function Navigation () {
             {/* <NavLink to="/"> */}
              <img src ={Logo} className="header__icon" alt="logo for the plant site"/>
             {/* </NavLink> */}
-            <h1>Plant Diary</h1>
+            <h1 className="header__one">Plant Diary</h1>
             <nav>
             
                 {/* <NavLink to= "/MyPlants"  className="navigation__location"activeClassName="navigation__location--selected"> */}
-                    <div>My plants</div> 
+                    <div className="header__two">My Plants</div> 
                 {/* </NavLink>  */}
             </nav>
         </header>
