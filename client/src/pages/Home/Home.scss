@@ -1,7 +1,9 @@
 @import '../../partials/_variables.scss';
 @import '../../partials/_mixins.scss';
 .home {
+    // margin-top: 200px;
     @include mobile-padding;
+    color: #004C41;
     &__wrap {
         display: flex;
         // text-align: justify;
@@ -15,7 +17,7 @@
     }
     &__paragraph {
         margin: 0px;
-        padding-top: 10px;
+        // padding-top: 10px;
         color: #004C41;
         padding-left: 10px;
         font-size: 0.813rem;
@@ -23,8 +25,16 @@
     }
     &__image {
         width: 50%;
-        // display: flex;
-        // align-self: end;
+    }
+    &__flex {
+        padding-top: 10px;
+        display: flex;
+        // align-items: center;
+    }
+    &__sideicon {
+        padding-top: 2px;
+        height: 20px;
+        padding-right: 5px;
     }
     &__button {
         @include button;
@@ -49,6 +59,7 @@
     }
     &__footer {
         display: flex;
+        color: white;
         padding-right: 16px;
         align-items: center;
         background-color: #81B9BF;
