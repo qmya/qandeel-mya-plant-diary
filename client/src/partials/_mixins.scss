@@ -97,3 +97,14 @@
     line-height: 1.25rem;
     color: $silver;
 }
+
+//button
+@mixin button {
+    background-color: $navigation;
+    color: $text;
+    padding: 10px 20px;
+    font-size: 10px;
+    border-radius: 50px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    margin-bottom: 20px;
+}
