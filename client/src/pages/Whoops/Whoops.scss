@@ -1,0 +1,35 @@
+@import '../../partials/_variables.scss';
+@import '../../partials/_mixins.scss';
+.whoops {
+    @include mobile-padding;
+    display: flex;
+    padding-top: 30px;
+    &__wrap {
+        color: $navigation;
+    }
+    &__header {
+        @include mobile-h2-subheader;
+        font-weight: bold;
+    }
+    &__paragraph {
+        @include mobile-paragraph;
+    }
+    &__image {
+        width: 180px;
+        padding-left: 10px;
+    }
+    &__button {
+        @include button;
+    }
+    &__footer {
+        display: flex;
+        padding-right: 16px;
+        align-items: center;
+        background-color: #81B9BF;
+        justify-content: flex-end;
+    }
+    &__icon {
+        padding-left: 10px;
+        height: 20px;
+    }
+}
