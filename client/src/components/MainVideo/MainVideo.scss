@@ -19,7 +19,9 @@
         line-height: normal;
     }
     &__wrapper {
-        background-color: rgba(0, 1, 1, 0.5);
+        display: flex;
+        justify-content: center;
+        background-color: rgba(185, 204, 204, 0.5);
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
