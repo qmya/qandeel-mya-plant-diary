@@ -11,11 +11,15 @@ function MainVideo () {
         //   </video> */}
         {/* <img src={Image} alt="Main image"/>
        <h1>helooo  lsjdda;lscdjhskjlkalxzcnbjhkjdsklamxzncjndlksa,mxz</h1> */}
-       <div class="heroimage">
-       <h1 class="heroimage__paragraph">A diary to keep your plant happy and healthy</h1>
-       </div>
+       {/* <div className="heroimage">
+       <h1 className="heroimage__paragraph">A diary to keep your plant happy and healthy</h1>
+       </div> */}
        {/* <h1 class="heroimage">A diary to keep your plant happy and healthy</h1> */}
-      
+      <div className="heroimage">
+          <div className="heroimage__wrapper">
+           <h1 className="heroimage__paragraph">A diary to keep your plant happy and healthy</h1> 
+          </div>
+      </div>
        </>
         
     );
