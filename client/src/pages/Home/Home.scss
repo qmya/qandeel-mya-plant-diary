@@ -27,16 +27,7 @@
         // align-self: end;
     }
     &__button {
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        background-color: #004C41;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 10px;
+        @include button;
         ////position: relative;
         ////display: block;
         ////margin: 30px auto;
@@ -44,8 +35,6 @@
         ////overflow: hidden;
         ////border-width: 0;
         ////outline: none;
-        border-radius: 50px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
         ////transition: background-color .3s;
         ////&:;
         //hover,////&:focus ;
@@ -57,10 +46,6 @@
         //-moz-border-radius: 5px;
         //-ms-border-radius: 5px;
         //-o-border-radius: 5px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
     }
     &__footer {
         display: flex;
