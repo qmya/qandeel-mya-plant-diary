@@ -7,7 +7,7 @@ import Illustration from '../../assets/illustration-two.svg';
 function Whoops() {
     return(
         <div>
-          <Navigation/>
+          
           <div className="whoops">
                 <div className="whoops__wrap">
                     <h1 className="whoops__header">Whoops,looks like you don't have any plants</h1>
