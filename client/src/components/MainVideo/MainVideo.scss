@@ -1,15 +1,18 @@
 @import '../../partials/_variables.scss';
 @import '../../partials/_mixins.scss';
 .heroimage {
-    background: url(../../assets/hero-image.jpg);
-    background-size: cover;
+    // background: url(../../assets/hero-image.jpg);
+    // background-size: cover;
+    // position: fixed;
     width: 100%;
     height: 400px;
+    object-fit: cover;
+    // min-height: 400px;
+    // overflow: hidden;
     // position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include mobile-h2-subheader;
     &__paragraph {
         margin: 0px;
         color: white;
@@ -17,13 +20,19 @@
         text-align: center;
         width: 288px;
         line-height: normal;
+        @include mobile-h2-subheader;
     }
     &__wrapper {
+        position: absolute;
+        top: calc(50% - 44px);
         display: flex;
         justify-content: center;
-        background-color: rgba(185, 204, 204, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+    &__container {
+        position: relative;
     }
 }
