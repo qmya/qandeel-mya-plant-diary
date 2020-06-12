@@ -38,7 +38,7 @@ function Home(props) {
                 <img className="home__sideicon" src={health} alt ="health icon"/>
                   <p className="home__paragraph">We will let you know how healthy your plants are</p>
                 </div>
-                <Link to={`/plant/${props.id}`}>
+                <Link to={`/myplants`}>
                   <button type="button" className="home__button">GET STARTED</button>
                 </Link>
             </div>
