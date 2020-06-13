@@ -1,24 +1,21 @@
 import React from 'react';
-// import Navigation from './components/Navigation/Navigation.js';
-// import MainVideo from './components/MainVideo/MainVideo.js';
+import Navigation from './components/Navigation/Navigation.js'
 import Home from './pages/Home/Home.js';
-// import MyPlants from './pages/Myplants/MyPlants.js';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import MyPlants from './pages/MyPlants/MyPlants.js';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 
 function App() {
   return (
     <>
-    {/* <BrowserRouter> */}
-    <Home/>
-     {/* <Navigation/>
-     <MainVideo/> */}
-    {/* <Switch>
-  //  <Route path='/' exact component ={Home} />;
-  //      <Route path='/plant' component = {MyPlants}/>
-  //    </Switch> */}
-    {/* // </BrowserRouter> */}
-</>
+      <BrowserRouter>
+        <Navigation/>
+        <Switch>
+        <Route path='/' exact component ={Home} />;
+        <Route path='/myplants' component = {MyPlants}/>
+        </Switch>
+      </BrowserRouter>
+    </>
 
   ); 
 }
