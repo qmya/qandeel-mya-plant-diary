@@ -45,10 +45,6 @@ function Home(props) {
                 <img className="home__image" src ={illustration}  alt= "a girl talking care of plants"/>
           </div>
         </div>
-        <div className="home__footer">
-         <h5>Qandeel Labs</h5>
-         <img className="home__icon" src={icon} alt ="linkedIn icon"/>
-        </div>
         </div>
        
     );

@@ -49,11 +49,6 @@ class Whoops extends React.Component {
                 </div>
                 <img className="whoops__image" src={Illustration} alt=' empty plants page image'/>
             </div>
-            <div className="whoops__footer">
-         <h5>Qandeel Labs</h5>
-         <img className="whoops__icon" src={Icon} alt ="linkedIn icon"/>
-        </div>
-        
         <ReactModal isOpen={this.state.modalIsOpen}>
             <PlantModal closeModal={this.closeModal}/>
         </ReactModal>

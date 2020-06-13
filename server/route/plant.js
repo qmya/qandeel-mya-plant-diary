@@ -23,7 +23,7 @@ router.get('/userData', (req, res) => {
 });
 
 router.post("/userData",(req,res)=>{
-  let {name} = req.body;
+  let {name,description,image} = req.body;
   if(plantList.find(plant => {return plant.name=== name}) ){
      userData.push(req.body)
     

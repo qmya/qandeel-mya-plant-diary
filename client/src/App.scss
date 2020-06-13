@@ -24,6 +24,20 @@ a {
     margin: 0px;
 }
 
+.footer {
+    display: flex;
+    color: white;
+    padding-right: 16px;
+    align-items: center;
+    background-color: #81B9BF;
+    justify-content: flex-end;
+}
+
+.icon {
+    padding-left: 10px;
+    height: 20px;
+}
+
 // @media (prefers-reduced-motion: no-preference) {
 //   .App-logo {
 //     animation: App-logo-spin infinite 20s linear;

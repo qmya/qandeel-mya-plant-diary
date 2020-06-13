@@ -10,12 +10,13 @@ function MainVideo () {
            
       
       <div className="heroimage__container" >
-      <video className="heroimage" loop="true" autoPlay="autoplay" id="vid" muted>
+      <video className="heroimage" loop={true} autoPlay="autoplay" id="vid" muted>
            <source src ={plantVideo}></source>
            </video>
           <div className="heroimage__wrapper">
           
-           <h1 className="heroimage__paragraph">A diary to keep your plant happy and healthy</h1> 
+           <h1 className="heroimage__paragraph">
+               A diary to keep your plant  happy and healthy</h1> 
           </div>
       </div>
        </>
@@ -24,3 +25,4 @@ function MainVideo () {
 }
 
 export default MainVideo;
+

@@ -7,10 +7,12 @@ function Navigation () {
     
     return ( 
         <header className="header">
+            <div className="header__iconheader">
             <Link to="/">
              <img src ={Logo} className="header__icon" alt="logo for the plant site"/>
             </Link>
             <h1 className="header__one">Plant Diary</h1>
+            </div>
             <nav>
             
                 <Link to= "/myplants">
