@@ -17,7 +17,7 @@ function Home(props) {
           <MainVideo/>
           
           <div className="home">
-          <h1>What to expect?</h1>
+          <h1 className="home__header">What to expect?</h1>
               <div className="home__wrap">
               <div className="home__column">
 

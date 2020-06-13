@@ -1,10 +1,14 @@
 @import '../../partials/_variables.scss';
 @import '../../partials/_mixins.scss';
 .home {
+    @include desktop-padding;
     // margin-top: 200px;
     @include desktop {
-        @include desktop-padding;
         color: #004C41;
+        &__header {
+            @include h1-header;
+            margin-top: 40px;
+        }
         &__wrap {
             display: flex;
             // text-align: justify;
@@ -17,8 +21,9 @@
             width: 50%;
         }
         &__paragraph {
+            @include h3-subheader;
             margin: 0px;
-            // padding-top: 10px;
+            padding-top: 10px;
             color: #004C41;
             padding-left: 10px;
             font-size: 0.813rem;
@@ -26,6 +31,7 @@
         }
         &__image {
             width: 50%;
+            height: 354px;
         }
         &__flex {
             padding-top: 10px;
@@ -33,12 +39,16 @@
             // align-items: center;
         }
         &__sideicon {
+            margin-left: 40px;
             padding-top: 2px;
-            height: 20px;
+            height: 45px;
+            width: 45px;
             padding-right: 5px;
         }
         &__button {
             @include button;
+            margin-top: 50px;
+            margin-left: 40px;
             ////position: relative;
             ////display: block;
             ////margin: 30px auto;
