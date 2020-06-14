@@ -1,22 +1,24 @@
 [{
         "id": "P0",
+        "nickName": "",
         "name": "Mint",
         "image": "https://unsplash.com/photos/EY7OYxWByOo",
         "description": "Mint is a perennial with very fragrant, toothed leaves and tiny purple, pink, or white flowers. It has a fruity, aromatic taste.",
         "light": 4,
         "health": "happy",
-        "water-frequency": 2,
+        "water": 2,
         "last-watered-date": "12-6-2020"
     },
 
     {
         "id": "P1",
         "name": "Coriander",
+        "nickName": "",
         "image": "https://unsplash.com/photos/hX_hf2lPpUU",
         "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
         "light": 3,
         "health": "happy",
-        "water-frequency": 3,
+        "water": 3,
         "last-watered-date": "12-7-2020 "
     }
 ]
