@@ -3,13 +3,14 @@ import React from "react";
 
 function PlantItem(props){
     return(
-            <div className='myplant__card'>
-            //     <div>{props.id}</div>
-            //     <div>{props.image}</div>
-            //     <div>{props.name}</div> 
-            //     <div>{props.description}</div>
-            //     {/* <div>{props.water-frequency}</div> */}
-            //     <div>{props.light}</div>
+            <div className='plantitem__card'>
+                 {/* <div>{props.id}</div> */}
+                 <div >{props.image}</div>
+                 <div>{props.name}</div> 
+                 <div>{props.nickName}</div> 
+                 <div>{props.description}</div>
+                 <div>{props.water}</div>
+                 <div>{props.light}</div>
             </div>  
     );
 }

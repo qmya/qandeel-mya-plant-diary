@@ -1,0 +1,11 @@
+@import '../../partials/_variables.scss';
+@import '../../partials/_mixins.scss';
+.plantitem {
+    @include desktop-padding;
+    @include desktop {
+        &__card {
+            display: flex;
+            background-color: red;
+        }
+    }
+}
