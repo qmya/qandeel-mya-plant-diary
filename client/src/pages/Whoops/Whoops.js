@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import ReactModal from 'react-modal';
 import PlantModal from '../../components/PlantModal/PlantModal.js';
 import './Whoops.scss'
@@ -31,9 +31,7 @@ class Whoops extends React.Component {
     
    
     
-    //   handleSaveClicked = (e) => {
-    //     alert('Save button was clicked');
-    //   }
+     
 
 
 
