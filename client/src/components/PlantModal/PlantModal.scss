@@ -1,0 +1,25 @@
+@import '../../partials/_variables.scss';
+@import '../../partials/_mixins.scss';
+.modal {
+    // @include mobile-padding;
+    // position: absolute;
+    // /* align-content: center; */
+    // top: 20%;
+    // left: 30%;
+    // right: 30%;
+    // bottom: 60%;
+    @include desktop {
+        &__heading {
+            margin: 0;
+            padding: 10px;
+            background-color: #81B9BF;
+            color: white;
+        }
+        &__name {
+            padding: 10px;
+        }
+        &__button {
+            @include button;
+        }
+    }
+}
