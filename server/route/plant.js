@@ -6,11 +6,13 @@ const userData = require ("../data/user.json");
 
 
 router.get("/", (req, res) => {
-  res.status(200).json(plantList);
+ 
+  res.status(200).json(userData);
 });
 
-router.get("/plant:id", (req, res) => {
-  const plantid = plantList.find((item) => item.id === req.params.plantid);
+router.get("/:id", (req, res) => {
+  
+  const plantid = userData.find((item) =>   item.id === req.params.id);
   if (plantid) {
     res.status(200).json(plantid);
   } else {
@@ -18,14 +20,16 @@ router.get("/plant:id", (req, res) => {
   }
 });
 
+
 router.get('/userData', (req, res) => {
 	res.status(200).json(userData);
 });
 
 router.post("/userData",(req,res)=>{
-  let {name,description,image} = req.body;
-  if(plantList.find(plant => {return plant.name=== name}) ){
-     userData.push(req.body)
+  let {name,nickName} = req.body;
+  const foundPlant = plantList.find(plant => {return plant.name.toLowerCase() === name.toLowerCase()})
+  if(foundPlant){
+     userData.push({...foundPlant, nickName: nickName})
     
      res.status(200).json(userData)
   }else{
@@ -33,15 +37,6 @@ router.post("/userData",(req,res)=>{
   }
 })
 
-
-// router.post('/plant',(request,response) =>{
-//   const iteminfo =request.body;
-//   if(
-//     plantList.find(name => {
-//      return name.name === iteminfo.name
-//     }){userdata.push(iteminfo)}
-// )}
-// })
 
 
 router.delete("/:plantid", (req, res) => {
