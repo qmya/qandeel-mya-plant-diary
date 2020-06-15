@@ -6,14 +6,15 @@ const PlantList =(props) => {
     return(
         <div className="plantlist">
             <div>
-                {/* <h1 className="plantlist__header">Your Plants</h1>
+                <h1 className="plantlist__header">Your Plants</h1>
                 <div  className="plantlist__flex">
-                    <p className="plantlist__paragraph">Below is the list of the plants you have added to your garden.</p>
-                    <button className="plantlist__button">ADD PLANTS</button>
-                </div> */}
+                    <p className="plantlist__paragraph">
+                        Below is the list of the plants you have added to your garden.</p>
+                    <button className="plantlist__button" onClick={props.openModal}>ADD PLANTS</button>
+                </div>
                 {props.plantList.length ? props.plantList.map(plant =>(
                     
-                    <PlantItem
+                    <PlantItem className="plantlist__card"
                     id={plant.id}
                     image={plant.image}
                     name={plant.name}
@@ -24,9 +25,13 @@ const PlantList =(props) => {
                     />
                 )): null}
                 
-            </div>
+            {/* </div> */}
             
+        </div>
         </div>
     )
 }
 export default PlantList;
+
+
+
