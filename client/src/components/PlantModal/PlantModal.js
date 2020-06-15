@@ -25,7 +25,7 @@ const PlantModal = (props) => {
               })
             //   alert('Add plant button was clicked');
       }
-    
+    console.log(props);
 return (
       <div className="modal">
         <h2 className="modal__heading">Add Plant</h2>
