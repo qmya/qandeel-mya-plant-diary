@@ -14,7 +14,7 @@ const PlantList =(props) => {
                 </div>
                 {props.plantList.length ? props.plantList.map(plant =>(
                     
-                    <PlantItem className="plantlist__card"
+                    <PlantItem 
                     id={plant.id}
                     image={plant.image}
                     name={plant.name}
@@ -22,6 +22,7 @@ const PlantList =(props) => {
                     description={plant.description}
                     light={plant.light}
                     water={plant.water}
+                    // reminder={plant.last-watered-date}
                     />
                 )): null}
                 

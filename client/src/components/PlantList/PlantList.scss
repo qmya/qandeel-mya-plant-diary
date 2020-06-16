@@ -1,9 +1,26 @@
-// @import '../../partials/_variables.scss';
-// @import '../../partials/_mixins.scss';
-// .plantlist {
-//     @include desktop-padding;
-//     // @include desktop {
-//     &__card {
-//         background-color: red;
-//     }
-// }
+        @import '../../partials/_variables.scss';
+        @import '../../partials/_mixins.scss';
+        .plantlist {
+            @include desktop {
+                color: #004C41;
+                &__flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &__button {
+                    @include button;
+                }
+                &__header {
+                    @include h1-header;
+                    margin-top: 40px;
+                }
+                &__paragraph {
+                    font-size: 20px;
+                    margin: 0px;
+                    padding-top: 15px;
+                    color: #004C41;
+                    padding-left: 10px;
+                }
+            }
+        }
