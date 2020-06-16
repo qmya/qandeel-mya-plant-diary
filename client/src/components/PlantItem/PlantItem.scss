@@ -1,11 +1,53 @@
 @import '../../partials/_variables.scss';
 @import '../../partials/_mixins.scss';
 .plantitem {
-    @include desktop-padding;
+    //@includedesktop-padding:;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    height: 300px;
     @include desktop {
-        &__card {
+        display: flex;
+        overflow: hidden;
+        // justify-content: space-between;
+        &__image {
+            width: 20%;
+            // margin-right: 20px;
+        }
+        &__intro {
+            margin: 20px;
+            width: 650px;
+        }
+        &__namenick {
             display: flex;
-            background-color: red;
+            align-items: center;
+        }
+        &__name {
+            @include h1-header;
+            margin-right: 20px;
+            color: #81B9BF;
+        }
+        &__nickname {
+            @include h2-header;
+        }
+        &__description {
+            @include paragraph;
+            padding-top: 20px;
+        }
+        &__icons {
+            margin: 20px;
+            width: 170px;
+        }
+        &__trash {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 20px;
+        }
+        &__drop {
+            margin-bottom: 20px;
         }
     }
 }
