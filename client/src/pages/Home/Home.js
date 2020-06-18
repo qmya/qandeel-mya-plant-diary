@@ -1,5 +1,7 @@
 import React from 'react';
 import './Home.scss';
+import ReactModal from 'react-modal';
+import PlantModal from '../../components/PlantModal/PlantModal.js';
 import illustration from '../../assets/illustration.svg';
 import icon from '../../assets/icons8-linkedin.svg';
 import pot from '../../assets/icons8-potted-plant.svg';
@@ -10,7 +12,26 @@ import MainVideo from '../../components/MainVideo/MainVideo.js';
 import { Link } from 'react-router-dom';
 
 
-function Home(props) {
+class Home extends React.Component {
+
+
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+        modalIsOpen: false 
+    };
+  }
+
+  openModal = () => {
+    this.setState({modalIsOpen: true});
+    console.log("open");
+  }
+
+  closeModal = () => {
+    this.setState({modalIsOpen: false});
+  }
+render(){
     return (
         <div>
          
@@ -38,15 +59,21 @@ function Home(props) {
                 <img className="home__sideicon" src={health} alt ="health icon"/>
                   <p className="home__paragraph">We will let you know how healthy your plants are</p>
                 </div>
-                <Link to={`/myplants`}>
-                  <button type="button" className="home__button">GET STARTED</button>
-                </Link>
+                
+                
+                  <button type="button" className="home__button" onClick={this.openModal}>GET STARTED</button>
+                
             </div>
                 <img className="home__image" src ={illustration}  alt= "a girl talking care of plants"/>
           </div>
         </div>
+        <ReactModal className="whoops__modal" isOpen={this.state.modalIsOpen}>
+            <PlantModal closeModal={this.closeModal} getData={this.props.getData}/>
+        </ReactModal>
+       
         </div>
        
     );
+}
 }
 export default Home;
