@@ -33,17 +33,17 @@ return (
         <h2 className="modal__heading">Add Plant</h2>
         <form onSubmit={handleSaveClicked}>
                 <div className='modal__name'>
-                    <label htmlFor='name' className='label'>Name</label>
+                    <label htmlFor='name' className='label'>Plant Name</label>
                     <input name='name' onChange={(e) => setName(e.target.value) } placeholder='Name' className='modal__input'/>
                 </div>
                 <div className='modal__name'>
-                    <label htmlFor='nickname' className='label'>Nick Name</label>
+                    <label htmlFor='nickname' className='label'>Nick Name </label>
                     <input name='nickName' onChange={(e) => setnickName(e.target.value) } placeholder='Nick Name' className='modal__input'/>
                 </div>
                 <div className='modal__buttons'>
-                    <button type='submit' className='modal__button'>Add PLANT</button>
-                    <button type='button' className='modal__button button--cancel
-                    ' onClick={props.closeModal}>CANCEL</button>
+                    <button type='submit' className='modal__button'>ADD PLANT</button>
+                    <button type='button' className='modal__button button--cancel'
+                     onClick={props.closeModal}>CANCEL</button>
                 </div>
         </form>
         
