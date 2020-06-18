@@ -12,7 +12,7 @@ const PlantModal = (props) => {
         const data = new FormData(event.target);
        
         axios
-            .post('http://localhost:8080/plant/userData', {
+            .post('http://localhost:8080/userData', {
                 name:`${name}`,
                 nickName:`${nickName}`
             })
@@ -22,9 +22,11 @@ const PlantModal = (props) => {
               })
               .catch(function (error) {
                 console.log(error);
+                alert('Sorry! This plant does not exist');
               })
-            //   alert('Add plant button was clicked');
       }
+
+      
     console.log(props);
 return (
       <div className="modal">
@@ -32,11 +34,11 @@ return (
         <form onSubmit={handleSaveClicked}>
                 <div className='modal__name'>
                     <label htmlFor='name' className='label'>Name</label>
-                    <input name='name' onChange={(e) => setName(e.target.value) } placeholder='Name' className='input'/>
+                    <input name='name' onChange={(e) => setName(e.target.value) } placeholder='Name' className='modal__input'/>
                 </div>
                 <div className='modal__name'>
                     <label htmlFor='nickname' className='label'>Nick Name</label>
-                    <input name='nickName' onChange={(e) => setnickName(e.target.value) } placeholder='Nick Name' className='input'/>
+                    <input name='nickName' onChange={(e) => setnickName(e.target.value) } placeholder='Nick Name' className='modal__input'/>
                 </div>
                 <div className='modal__buttons'>
                     <button type='submit' className='modal__button'>Add PLANT</button>

@@ -1,14 +1,8 @@
 @import '../../partials/_variables.scss';
 @import '../../partials/_mixins.scss';
 .modal {
-    // @include mobile-padding;
-    // position: absolute;
-    // /* align-content: center; */
-    // top: 20%;
-    // left: 30%;
-    // right: 30%;
-    // bottom: 60%;
     @include desktop {
+        background-color: white;
         &__heading {
             margin: 0;
             padding: 10px;
@@ -17,9 +11,19 @@
         }
         &__name {
             padding: 10px;
+            font-size: 20px;
+        }
+        &__input {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        &__buttons {
+            display: flex;
+            flex-flow: row-reverse;
         }
         &__button {
             @include button;
+            margin-left: 10px;
         }
     }
 }
