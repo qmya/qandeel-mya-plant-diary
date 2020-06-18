@@ -3,6 +3,7 @@ import icon from './assets/icons8-linkedin.svg';
 import Navigation from './components/Navigation/Navigation.js'
 import Home from './pages/Home/Home.js';
 import MyPlants from './pages/MyPlants/MyPlants.js';
+import Footer from './components/Footer/Footer.js';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 
@@ -15,10 +16,11 @@ function App() {
         <Route path='/' exact component ={Home} />;
         <Route path='/myplants' component = {MyPlants}/>
         </Switch>
-        <div className="footer">
+        <Footer />
+        {/* <footer className="footer">
          <h5>Qandeel Labs</h5>
-         <img className="icon" src={icon} alt ="linkedIn icon"/>
-        </div>
+        <a target="_blank" href="https://www.linkedin.com/in/qandeel-mya/"> <img className="icon" src={icon} alt ="linkedIn icon"/></a>
+        </footer> */}
       </BrowserRouter>
     </>
 
