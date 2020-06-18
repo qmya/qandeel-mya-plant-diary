@@ -13,7 +13,8 @@
         display: flex;
         overflow: hidden;
         &__image {
-            width: 20%;
+            max-width: 30%;
+            object-fit: cover;
         }
         &__intro {
             margin: 20px;
