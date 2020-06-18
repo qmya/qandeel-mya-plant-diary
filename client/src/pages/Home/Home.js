@@ -67,7 +67,7 @@ render(){
                 <img className="home__image" src ={illustration}  alt= "a girl talking care of plants"/>
           </div>
         </div>
-        <ReactModal className="whoops__modal" isOpen={this.state.modalIsOpen}>
+        <ReactModal className="home__modal" isOpen={this.state.modalIsOpen}>
             <PlantModal closeModal={this.closeModal} getData={this.props.getData}/>
         </ReactModal>
        
