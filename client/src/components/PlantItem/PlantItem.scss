@@ -12,10 +12,8 @@
     @include desktop {
         display: flex;
         overflow: hidden;
-        // justify-content: space-between;
         &__image {
             width: 20%;
-            // margin-right: 20px;
         }
         &__intro {
             margin: 20px;
@@ -35,7 +33,12 @@
         }
         &__description {
             @include paragraph;
-            padding-top: 20px;
+            padding-top: 10px;
+            height: 35%;
+        }
+        &__date {
+            display: flex;
+            flex-direction: column;
         }
         &__icons {
             margin: 20px;
@@ -44,10 +47,31 @@
         &__trash {
             display: flex;
             flex-direction: row-reverse;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         &__drop {
-            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &__button {
+            margin: 0;
+            @include button;
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+        &__paragraph {
+            @include paragraph;
+            margin: 0;
+        }
+        &__flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

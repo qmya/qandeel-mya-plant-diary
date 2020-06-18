@@ -1,51 +1,132 @@
 import React, {useState} from "react";
-// import Calendar from 'react-calendar';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
+import { v4 as uuidv4 } from 'uuid';
+import axios from "axios";
+import plantGood from '../../assets/PlantGOOD.svg';
+import plantBad from '../../assets/PlantBAD.svg';
+import plantOk from '../../assets/PlantOK.svg';
 import trash from '../../assets/icons8-trash_can.svg';
 import light from '../../assets/icons8-sun yellow.svg';
 import water from '../../assets/icons8-water blue.svg';
 import "./PlantItem.scss";
 
-function PlantItem(props){
-  // const [date, setDate]=useState(newDate());
+// const plantImage = [
+// plantGood,
+// plantOk,
+// plantBad
+// ];
 
-  // const onChange =date =>{
-  //   setDate(date)
-  // }
-    let drop=[];
-    for(var i=0; i<props.water; i++){
-      drop.push(<img src={water}/>)
+let plantImg = "";
+const API_URL = "http://localhost:8080";
+
+class PlantItem extends React.Component{
+  constructor(props){
+    super(props)
+  this.state = {
+    startDate: ""
+  };
+  this.handleChange = this.handleChange.bind(this);
+  this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(date) {
+    this.setState({
+      startDate:date
+    })
+  }
+
+handleSubmit(e) {
+  e.preventDefault();
+  axios 
+      .post(API_URL +'/userData/' +this.props.id,{date:this.state.startDate})
+        .then(result => {this.props.getData()})
+        console.log(this.state.startDate);
+    
+      
+  
+
+  console.log(this.state.startDate);
+}
+
+
+
+   
+render(){
+  let drop=[];
+  for(var i=0; i<this.props.water; i++){
+    drop.push(<img key={uuidv4()} src={water}/>)
+  }
+  let sun =[];
+  for(var i=0; i<this.props.light; i++){
+    sun.push(<img key={uuidv4()} src={light}/>)
+  }
+  let between = 0;
+  console.log(new Date(this.props.lastwatereddate))
+  if (this.props.lastwatereddate !== ""){
+    let day=Date.now() - new Date(this.props.lastwatereddate).getTime();
+     between = Math.floor(day / (24*60*60*1000));
+     console.log(between);
+    
+  
+  }
+   
+
+
+
+      if(between >=6 ){
+        plantImg=plantBad;
+        console.log(plantImg)
     }
-    let sun =[];
-    for(var i=0; i<props.light; i++){
-      sun.push(<img src={light}/>)
+    else if(between >=3 ){
+      plantImg=plantOk;
+      console.log(plantImg)
+    }
+    else if(between >=0 ){
+      plantImg = plantGood;
+      console.log(plantImg)
     }
 
+  
     return(
 
-            <div className='plantitem'>
-                 <img className='plantitem__image'src={props.image}/>
+            <div className='plantitem' key={uuidv4()}>
+                 <img className='plantitem__image'src={this.props.image}/>
                  <div className='plantitem__intro'>
                  <div className='plantitem__namenick'>
-                 <div className='plantitem__name'>{props.name}</div> 
-                 <div className='plantitem__nickname'>{props.nickName}</div> 
+                 <div className='plantitem__name'>{this.props.name}</div> 
+                 <div className='plantitem__nickname'>{this.props.nickName}</div> 
                  
                  </div>
-                 <div className='plantitem__description'>{props.description}</div>
-                 
+                 <div className='plantitem__description'>{this.props.description}</div>
+                 <div className='plantitem__date'>
+                   {/* <h3>Last Watered:</h3> */}
+                    <form className='plantitem__form' onSubmit={this.handleSubmit}>
+                     <h3><label>Last Watered:</label></h3>
+                     <DatePicker
+                        selected={ this.state.startDate }
+                        onChange={ this.handleChange }
+                        dateFormat="MM/dd/yyyy"
+                      />
+                      <button className='plantitem__button' type="submit">Add Date</button>
+                    </form>
+                    <p className='plantitem__paragraph'>{between+" day since watered"}</p>
+                    
+                 </div>
                  </div>
                 
                  <div className='plantitem__icons'>
-                 <div className='plantitem__trash'><img src={trash}/></div>
+                 <div className='plantitem__trash' onClick={() => this.props.handleDelete(this.props.id)}><img src={trash}/></div>
+                 <div className='plantitem__flex'>
+                 <img className='plantitem__condition'src={plantImg}/>
                  <div className='plantitem__drop'>{drop}</div>
                  <div>{sun} </div>
                  </div>
-                 {/* <div>
-                   <Calendar onChange={onChange} value={date}/>
-                   
-                   </div> */}
+                 </div>
             </div>  
             
     );
+}
 }
 
 export default PlantItem;
