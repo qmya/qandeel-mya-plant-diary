@@ -2,23 +2,135 @@
         "id": "P0",
         "nickName": "",
         "name": "Mint",
-        "image": "https://unsplash.com/photos/EY7OYxWByOo",
+        "image": "https://source.unsplash.com/boadZKqd1YM//1600x900",
         "description": "Mint is a perennial with very fragrant, toothed leaves and tiny purple, pink, or white flowers. It has a fruity, aromatic taste.",
         "light": 4,
         "health": "happy",
-        "water": 2,
-        "last-watered-date": "12-6-2020"
+        "water": 5,
+        "lastWateredDate": "",
+        "waterfrequency": 3
     },
 
     {
         "id": "P1",
         "name": "Coriander",
         "nickName": "",
-        "image": "https://unsplash.com/photos/hX_hf2lPpUU",
+        "image": "https://source.unsplash.com/N73L0EzbJ8Y//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 4,
+        "lastWateredDate": "",
+        "waterfrequency": 3
+    },
+    {
+        "id": "P2",
+        "name": "Basil",
+        "nickName": "",
+        "image": "https://source.unsplash.com/KSJm1IOKLBU//1600x900",
         "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
         "light": 3,
         "health": "happy",
         "water": 3,
-        "last-watered-date": "12-7-2020 "
+        "lastWateredDate": "",
+        "waterfrequency": 2
+    },
+    {
+        "id": "P3",
+        "name": "Lettuce",
+        "nickName": "",
+        "image": "https://source.unsplash.com/s4gWFbWdcWg/1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 3
+    },
+    {
+        "id": "P4",
+        "name": "Parsley",
+        "nickName": "",
+        "image": "https://source.unsplash.com/Ea8il0_J4-A//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 3
+    },
+    {
+        "id": "P5",
+        "name": "Dill",
+        "nickName": "",
+        "image": "https://source.unsplash.com/4G-lYHrY70I//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 2
+    },
+    {
+        "id": "P6",
+        "name": "Rosemary",
+        "nickName": "",
+        "image": "https://source.unsplash.com/hX_hf2lPpUU//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 2
+    },
+    {
+        "id": "P7",
+        "name": "Tarragon",
+        "nickName": "",
+        "image": "https://source.unsplash.com/hX_hf2lPpUU//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 2
+    },
+    {
+        "id": "P8",
+        "name": "Thai Chilli",
+        "nickName": "",
+        "image": "https://source.unsplash.com/QnwZMXdccWA//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 2
+    },
+    {
+        "id": "P9",
+        "name": "Cilantro",
+        "nickName": "",
+        "image": "https://source.unsplash.com/hX_hf2lPpUU//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 2
+    },
+    {
+        "id": "P10",
+        "name": "Spinach",
+        "nickName": "",
+        "image": "https://source.unsplash.com/hX_hf2lPpUU//1600x900",
+        "description": "Coriander is a spice produced from the round, tan-colored seeds of the coriander plant (Coriandrum sativum), which is a member of the parsley family. ",
+        "light": 3,
+        "health": "happy",
+        "water": 3,
+        "lastWateredDate": "",
+        "waterfrequency": 3
     }
+
+
 ]
