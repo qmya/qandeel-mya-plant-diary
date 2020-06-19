@@ -13,14 +13,20 @@
         position: absolute;
         right: 25%;
         width: 218px;
-        padding: 20px;
+        padding: 10px 20px;
         border: 1px solid #cccccc;
         font-size: 6px;
         bottom: 25%;
         background: white;
         border-radius: 10px;
     }
-    // &__button {
-    //     // @include smallButton;
-    // }
+    &__flex {
+        display: flex;
+        // padding-top: 5px;
+        justify-content: space-around;
+    }
+    &__button {
+        @include smallButton;
+        padding: 5px 5px;
+    }
 }
