@@ -105,9 +105,9 @@ class PlantItem extends React.Component {
                 Add Date
               </button>
             </form>
-            <p className="plantitem__paragraph">
+            <h3 className="plantitem__paragraph">
               {between + " day since watered"}
-            </p>
+            </h3>
           </div>
         </div>
 
