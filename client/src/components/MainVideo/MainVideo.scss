@@ -8,13 +8,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &__paragraph {
-            @include h3-subheader;
-            margin: 0px;
-            color: white;
-            text-align: center;
-            line-height: normal;
-        }
+        // &__paragraph {
+        //     @include h3-subheader;
+        //     margin: 0px;
+        //     color: white;
+        //     text-align: center;
+        //     line-height: normal;
+        // }
         &__wrapper {
             position: absolute;
             top: calc(50% - 44px);
@@ -29,4 +29,43 @@
             position: relative;
         }
     }
+}
+
+
+/* Animation */
+
+.anim-typewriter {
+    animation: typewriter 10s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 21em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: white;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.paragraph {
+    position: relative;
+    // top: 50%;
+    color: white;
+    // width: 21em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    // @include h3-subheader;
+    // text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    // transform: translateY(-50%);
 }

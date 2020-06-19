@@ -15,7 +15,7 @@ function MainVideo () {
            </video>
           <div className="heroimage__wrapper">
           
-           <h1 className="heroimage__paragraph">
+           <h1 className="paragraph anim-typewriter">
                A diary to keep your plant  happy and healthy</h1> 
           </div>
       </div>
