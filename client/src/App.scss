@@ -14,8 +14,6 @@ body {
     width: 100vw;
     font-size: 16px;
     text-decoration: none;
-    // font-family: $font-family, $font-family-alt;
-    // color: $font-color;
     margin: 0px;
 }
 
@@ -31,23 +29,14 @@ a {
     align-items: center;
     background-color: #81B9BF;
     justify-content: flex-end;
+    //try this to make the footer stick to the bottom
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .icon {
     padding-left: 10px;
     height: 20px;
 }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
