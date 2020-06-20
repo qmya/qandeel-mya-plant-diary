@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import DatePicker from "react-datepicker";
 import Popup from "../Popup/Popup.js";
 import "react-datepicker/dist/react-datepicker.css";
@@ -56,11 +56,11 @@ class PlantItem extends React.Component {
   render() {
     let drop = [];
     for (var i = 0; i < this.props.water; i++) {
-      drop.push(<img key={uuidv4()} src={water} />);
+      drop.push(<img key={uuidv4()} src={water} alt="droplet of water icons"/>);
     }
     let sun = [];
-    for (var i = 0; i < this.props.light; i++) {
-      sun.push(<img key={uuidv4()} src={light} />);
+    for (var j = 0; j < this.props.light; j++) {
+      sun.push(<img key={uuidv4()} src={light} alt="icons of sun to show light"/>);
     }
     let between = 0;
     console.log(new Date(this.props.lastwatereddate));
@@ -83,7 +83,7 @@ class PlantItem extends React.Component {
 
     return (
       <div className="plantitem" key={uuidv4()}>
-        <img className="plantitem__image" src={this.props.image} />
+        <img className="plantitem__image" src={this.props.image}  alt="specific plant with its name"/>
         <div className="plantitem__intro">
           <div className="plantitem__namenick">
             <div className="plantitem__name">{this.props.name}</div>
@@ -117,7 +117,7 @@ class PlantItem extends React.Component {
             className="plantitem__trash"
             onClick={this.togglePopup.bind(this)}
           >
-            <img  src={trash} />
+            <img  src={trash} alt="to delete the plant thats no more"/>
             {this.state.showPopup ? (
               <Popup
                 deletePopup={()=>this.props.handleDelete(this.props.id)}
@@ -128,7 +128,7 @@ class PlantItem extends React.Component {
             ) : null}
           </div>
           <div className="plantitem__flex">
-            <img className="plantitem__condition" src={plantImg} />
+            <img className="plantitem__condition" src={plantImg} alt="shows health of the plant according to the lastwatereddate"/>
             <div className="plantitem__drop">{drop}</div>
             <div>{sun} </div>
           </div>
