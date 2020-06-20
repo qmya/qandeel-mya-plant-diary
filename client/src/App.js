@@ -19,11 +19,7 @@ function App() {
        
         
       </BrowserRouter>
-      {/* <Footer /> */}
-      {/* <footer className="footer">
-         <h5>Qandeel Labs</h5>
-        <a target="_blank" href="https://www.linkedin.com/in/qandeel-mya/"> <img className="icon" src={icon} alt ="linkedIn icon"/></a>
-        </footer> */}
+      
     </>
 
   ); 

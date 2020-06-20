@@ -1,5 +1,5 @@
-@import './partials/variables';
-@import './partials/mixins';
+@import "./partials/variables";
+@import "./partials/mixins";
 html {
     box-sizing: border-box;
 }
@@ -15,28 +15,10 @@ body {
     font-size: 16px;
     text-decoration: none;
     margin: 0px;
+    font-family: "Quicksand";
 }
 
 a {
     text-decoration: none;
     margin: 0px;
-}
-
-.footer {
-    display: flex;
-    color: white;
-    padding-right: 16px;
-    align-items: center;
-    background-color: #81B9BF;
-    justify-content: flex-end;
-    //try this to make the footer stick to the bottom
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.icon {
-    padding-left: 10px;
-    height: 20px;
 }
