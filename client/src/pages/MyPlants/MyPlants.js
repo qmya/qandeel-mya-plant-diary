@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactModal from "react-modal";
-import DatePicker from 'react-datepicker';
-import moment from 'moment';
+// import DatePicker from 'react-datepicker';
+// import moment from 'moment';
 import PlantList from "../../components/PlantList/PlantList.js";
 import PlantModal from "../../components/PlantModal/PlantModal.js";
 import Whoops from "../Whoops/Whoops.js";
-import { withRenderCtrl } from "react-render-ctrl";
+// import { withRenderCtrl } from "react-render-ctrl";
 import axios from "axios";
 import "./MyPlants.scss";
 
@@ -41,12 +41,16 @@ class MyPlants extends React.Component {
     axios.get(API_URL +'/plant').then((response) => {
       this.setState({ plantList: response.data });
     
-    });
+    })
+    .catch(error => console.log(`Error : ${error}`)
+       )
   }
   getData = () => {
     axios.get(API_URL +'/plant').then((response) => {
       this.setState({ plantList: response.data });
-    });
+    })
+    .catch(error => console.log(`Error : ${error}`)
+       )
   }
 
   
@@ -60,7 +64,7 @@ class MyPlants extends React.Component {
            plantList:response.data
          })
        })
-       .catch(error => console.log(`Error : ${error}`)
+       .catch(error => console.log("Sorry! Can not delete the plant")
        )
   }
 
