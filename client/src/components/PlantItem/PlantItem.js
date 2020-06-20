@@ -17,10 +17,10 @@ const API_URL = "http://localhost:8080";
 
 class PlantItem extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       showPopup: false,
-      startDate: ""
+      startDate: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,8 +35,8 @@ class PlantItem extends React.Component {
 
   handleChange(date) {
     this.setState({
-      startDate: date
-    })
+      startDate: date,
+    });
   }
 
   handleSubmit(e) {
@@ -48,7 +48,6 @@ class PlantItem extends React.Component {
       .then((result) => {
         this.props.getData();
       });
-    
 
     console.log(this.state.startDate);
   }
@@ -56,11 +55,15 @@ class PlantItem extends React.Component {
   render() {
     let drop = [];
     for (var i = 0; i < this.props.water; i++) {
-      drop.push(<img key={uuidv4()} src={water} alt="droplet of water icons"/>);
+      drop.push(
+        <img key={uuidv4()} src={water} alt="droplet of water icons" />
+      );
     }
     let sun = [];
     for (var j = 0; j < this.props.light; j++) {
-      sun.push(<img key={uuidv4()} src={light} alt="icons of sun to show light"/>);
+      sun.push(
+        <img key={uuidv4()} src={light} alt="icons of sun to show light" />
+      );
     }
     let between = 0;
     console.log(new Date(this.props.lastwatereddate));
@@ -79,11 +82,15 @@ class PlantItem extends React.Component {
     } else if (between >= 0) {
       plantImg = plantGood;
       console.log(plantImg);
-    } 
+    }
 
     return (
       <div className="plantitem" key={uuidv4()}>
-        <img className="plantitem__image" src={this.props.image}  alt="specific plant with its name"/>
+        <img
+          className="plantitem__image"
+          src={this.props.image}
+          alt="specific plant with its name"
+        />
         <div className="plantitem__intro">
           <div className="plantitem__namenick">
             <div className="plantitem__name">{this.props.name}</div>
@@ -91,7 +98,6 @@ class PlantItem extends React.Component {
           </div>
           <div className="plantitem__description">{this.props.description}</div>
           <div className="plantitem__date">
-            {/* <h3>Last Watered:</h3> */}
             <form className="plantitem__form" onSubmit={this.handleSubmit}>
               <h3>
                 <label>Last Watered:</label>
@@ -110,25 +116,25 @@ class PlantItem extends React.Component {
             </h3>
           </div>
         </div>
-
         <div className="plantitem__icons">
-          {/* <div className='plantitem__trash' onClick={() => this.props.handleDelete(this.props.id)}><img src={trash}/></div> */}
           <div
             className="plantitem__trash"
             onClick={this.togglePopup.bind(this)}
           >
-            <img  src={trash} alt="to delete the plant thats no more"/>
+            <img src={trash} alt="to delete the plant thats no more" />
             {this.state.showPopup ? (
               <Popup
-                deletePopup={()=>this.props.handleDelete(this.props.id)}
-                
+                deletePopup={() => this.props.handleDelete(this.props.id)}
                 closePopup={this.togglePopup.bind(this)}
-
               />
             ) : null}
           </div>
           <div className="plantitem__flex">
-            <img className="plantitem__condition" src={plantImg} alt="shows health of the plant according to the lastwatereddate"/>
+            <img
+              className="plantitem__condition"
+              src={plantImg}
+              alt="shows health of the plant according to the lastwatereddate"
+            />
             <div className="plantitem__drop">{drop}</div>
             <div>{sun} </div>
           </div>

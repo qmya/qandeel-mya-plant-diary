@@ -1,7 +1,6 @@
 @import '../../partials/_variables.scss';
 @import '../../partials/_mixins.scss';
 .plantitem {
-    //@includedesktop-padding:;
     color: black;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -27,7 +26,7 @@
         &__name {
             @include h1-header;
             margin-right: 20px;
-            color: #81B9BF;
+            color: $modal-navigation;
         }
         &__nickname {
             @include h2-header;
