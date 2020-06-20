@@ -9,7 +9,7 @@ const PlantModal = (props) => {
    const handleSaveClicked = (event) => {
         event.preventDefault();
     
-        const data = new FormData(event.target);
+        // const data = new FormData(event.target);
        
         axios
             .post('http://localhost:8080/userData', {
@@ -41,7 +41,7 @@ return (
                     <input name='nickName' onChange={(e) => setnickName(e.target.value) } placeholder='Nick Name' className='modal__input'/>
                 </div>
                 <div className='modal__buttons'>
-                    <button type='submit' className='modal__button'>ADD PLANT</button>
+                    <button type='submit' className='modal__button' onClick={event =>  window.location.href='/myplants'}>ADD PLANT</button>
                     <button type='button' className='modal__button button--cancel'
                      onClick={props.closeModal}>CANCEL</button>
                 </div>
