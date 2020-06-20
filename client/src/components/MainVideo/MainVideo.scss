@@ -47,7 +47,7 @@
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: $white;
+        border-right-color: $text;
     }
     to {
         border-right-color: transparent;
