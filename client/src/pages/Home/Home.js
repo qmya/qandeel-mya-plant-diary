@@ -3,15 +3,15 @@ import './Home.scss';
 import ReactModal from 'react-modal';
 import PlantModal from '../../components/PlantModal/PlantModal.js';
 import illustration from '../../assets/illustration.svg';
-import icon from '../../assets/icons8-linkedin.svg';
+// import icon from '../../assets/icons8-linkedin.svg';
 import pot from '../../assets/icons8-potted-plant.svg';
 import heart from '../../assets/icons8-heart.svg';
 import water from '../../assets/icons8-water.svg';
 import health from '../../assets/icons8-stethoscope.svg';
 import MainVideo from '../../components/MainVideo/MainVideo.js';
-import { Link } from 'react-router-dom';
+import axios from "axios";
 
-
+const API_URL = "http://localhost:8080";
 class Home extends React.Component {
 
 
@@ -22,6 +22,14 @@ class Home extends React.Component {
         modalIsOpen: false 
     };
   }
+  
+  getData = () => {
+    axios.get(API_URL +'/plant').then((response) => {
+      this.setState({ plantList: response.data });
+    })
+    .catch(error => console.log(`Error : ${error}`)
+       )
+  }
 
   openModal = () => {
     this.setState({modalIsOpen: true});
@@ -31,6 +39,9 @@ class Home extends React.Component {
   closeModal = () => {
     this.setState({modalIsOpen: false});
   }
+  changeModal = () => {
+    this.setState({modalIsOpen:!this.state.modalIsOpen});
+}
 render(){
     return (
         <div>
@@ -68,8 +79,13 @@ render(){
           </div>
         </div>
         <ReactModal className="home__modal" isOpen={this.state.modalIsOpen}>
-            <PlantModal closeModal={this.closeModal} getData={this.props.getData}/>
-        </ReactModal>
+        <PlantModal
+                
+                closeModal={this.changeModal}
+                getData={this.getData}
+              />
+            </ReactModal>
+        
        
         </div>
        
