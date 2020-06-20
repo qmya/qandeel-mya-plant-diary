@@ -104,7 +104,7 @@
         "nickName": "",
         "image": "https://source.unsplash.com/4LiUI-Y2mI8//1600x900",
         "description": "Tomatoes are the most commonly grown garden vegetable, and with good reason. Home-grown tomatoes are infinitely better than those found in the grocery store. Plant them from seedlings after the last frost and choose disease-resistant varieties. ",
-        "light": 5,
+        "light": 4,
         "water": 4,
         "lastWateredDate": "",
         "waterfrequency": 2
