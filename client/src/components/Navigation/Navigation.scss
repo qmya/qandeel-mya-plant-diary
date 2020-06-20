@@ -3,7 +3,7 @@
 .header {
     @include desktop {
         @include desktop-padding;
-        background-color: #00796b;
+        background-color: $modal-navigation;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -20,13 +20,13 @@
         &__one {
             padding-left: 10px;
             @include h2-header;
-            $font-family-head: 'Quicksand';
-            color: white;
+            font-family: "Quicksand";
+            color: $text;
         }
         &__two {
             @include h2-header;
-            $font-family-head: 'Quicksand';
-            color: white;
+            font-family: "Quicksand";
+            color: $text;
         }
     }
 }
