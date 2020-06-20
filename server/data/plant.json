@@ -6,8 +6,7 @@
         "description": "There are several varieties of mint. You can use it in drinks like mojitos or mint juleps. Or add some mint to your summer iced tea. Mint freshens the breath and will help to calm your stomach.Mint will spread and take over your garden. It’s best grown in containers.",
         "light": 4,
         "water": 5,
-        "lastWateredDate": "",
-        "waterfrequency": 3
+        "lastWateredDate": ""
     },
 
     {
@@ -18,8 +17,7 @@
         "description": "Cilantro is also known as coriander leaf or Chinese parsley. Cilantro is perfect for adding into spicy foods like chills, and Mexican, Chinese, Southeast Asian and Indian cuisines. The seeds of cilantro are known as coriander. The plant grows early in the season and doesn’t like it when the ground becomes too warm. ",
         "light": 4,
         "water": 4,
-        "lastWateredDate": "",
-        "waterfrequency": 3
+        "lastWateredDate": ""
     },
     {
         "id": "P2",
@@ -29,8 +27,7 @@
         "description": "Whether you choose large leaf Italian basis or large purple sweet basil, this plant is popular in many cuisines but is a feature in Italian cooking like pizzas, salads, sauces, and pesto. Some people think basil is great for planting alongside your tomatoes but there’s no real evidence that it makes your tomatoes taste sweeter.",
         "light": 4,
         "water": 3,
-        "lastWateredDate": "",
-        "waterfrequency": 2
+        "lastWateredDate": ""
     },
     {
         "id": "P3",
@@ -40,8 +37,7 @@
         "description": "Plant lettuce in early spring, as soon as the soil is soft. Choose soft-headed lettuces over head lettuce, which tend to go to seed more quickly. Keep the soil moist so the lettuce is tender and mild. ",
         "light": 4,
         "water": 5,
-        "lastWateredDate": "",
-        "waterfrequency": 3
+        "lastWateredDate": ""
     },
     {
         "id": "P4",
@@ -51,8 +47,7 @@
         "description": "Sweet peppers need a warm location and moist soil to develop the thick-walled, sweet fruit. They are more difficult to grow in dry regions than chile peppers.",
         "light": 4,
         "water": 3,
-        "lastWateredDate": "",
-        "waterfrequency": 3
+        "lastWateredDate": ""
     },
     {
         "id": "P5",
@@ -62,8 +57,7 @@
         "description": "Dill is a great flavoring for fish, lamb, potatoes, and peas. It also aids in digestion, helps to fight bad breath and has the added benefits of reducing swelling and cramps. Dill is easy to grow. It will also attract helpful insects to your garden such as wasps and other predatory insects.",
         "light": 3,
         "water": 4,
-        "lastWateredDate": "",
-        "waterfrequency": 2
+        "lastWateredDate": ""
     },
     {
         "id": "P6",
@@ -73,8 +67,7 @@
         "description": " Cucumbers thrive in warm, moist conditions. Plant them after the last frost in a sunny location. Cucumbers take less room in the garden than most cucurbits and can even be trellised. Grow bush varieties in containers.",
         "light": 4,
         "water": 5,
-        "lastWateredDate": "",
-        "waterfrequency": 2
+        "lastWateredDate": ""
     },
     {
         "id": "P7",
@@ -84,8 +77,7 @@
         "description": "This staple crop is drought-resistant and yields more protein per square foot than any other crop but legumes. Start with certified disease-free seed potatoes and rotate crops every year to minimize disease. ",
         "light": 4,
         "water": 3,
-        "lastWateredDate": "",
-        "waterfrequency": 2
+        "lastWateredDate": ""
     },
     {
         "id": "P8",
@@ -95,8 +87,7 @@
         "description": "A staple of Southern cooking, okra thrives in warm, moist conditions, much like eggplant and tomatoes. Start it indoors six weeks before planting if you live in the north. Southern gardeners can plant it from seed in late spring.",
         "light": 4,
         "water": 3,
-        "lastWateredDate": "",
-        "waterfrequency": 2
+        "lastWateredDate": ""
     },
     {
         "id": "P9",
@@ -106,8 +97,7 @@
         "description": "Tomatoes are the most commonly grown garden vegetable, and with good reason. Home-grown tomatoes are infinitely better than those found in the grocery store. Plant them from seedlings after the last frost and choose disease-resistant varieties. ",
         "light": 4,
         "water": 4,
-        "lastWateredDate": "",
-        "waterfrequency": 2
+        "lastWateredDate": ""
     },
     {
         "id": "P10",
@@ -117,8 +107,7 @@
         "description": "Delicious in salads or steamed, spinach is one of the earliest garden greens. It goes to seed as soon as temperatures spike. Try new smooth varieties that are easier to wash than the crinkled type. ",
         "light": 4,
         "water": 4,
-        "lastWateredDate": "",
-        "waterfrequency": 3
+        "lastWateredDate": ""
     },
     {
         "id": "P11",
@@ -128,7 +117,6 @@
         "description": "Oregano is also part of the mint family and is native to the warm climates of Eurasia and the Mediterranean. Oregano is a perennial plant but in colder climates can be grown as an annual. It is sometimes called wild marjoram and is closely related to sweet marjoram. ",
         "light": 4,
         "water": 3,
-        "lastWateredDate": "",
-        "waterfrequency": 3
+        "lastWateredDate": ""
     }
 ]
