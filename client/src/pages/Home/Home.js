@@ -31,7 +31,6 @@ class Home extends React.Component {
 
   openModal = () => {
     this.setState({ modalIsOpen: true });
-    console.log("open");
   };
 
   closeModal = () => {
@@ -92,7 +91,7 @@ class Home extends React.Component {
         </div>
         <footer className="home__footer">
           <h5>Qandeel Labs</h5>
-          <a target="_blank" href="https://www.linkedin.com/in/qandeel-mya/">
+          <a href="https://www.linkedin.com/in/qandeel-mya/" target="_blank" rel="noopener noreferrer">
             {" "}
             <img className="home__icon" src={icon} alt="linkedIn icon" />
           </a>

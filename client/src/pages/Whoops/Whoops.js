@@ -13,7 +13,6 @@ class Whoops extends React.Component {
   }
   openModal = () => {
     this.setState({ modalIsOpen: true });
-    console.log("open");
   };
 
   closeModal = () => {

@@ -21,7 +21,6 @@ class MyPlants extends React.Component {
 
   openModal = () => {
     this.setState({ modalIsOpen: true });
-    console.log("open");
   };
 
   closeModal = () => {
@@ -61,7 +60,6 @@ class MyPlants extends React.Component {
       .catch((error) => console.log("Sorry! Can not delete the plant"));
   };
   render() {
-    console.log(this.state.plantList);
     return (
       <div className="myplant">
         {this.state.plantList.length > 0 ? (
