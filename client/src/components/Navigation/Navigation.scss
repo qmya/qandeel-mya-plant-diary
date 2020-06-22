@@ -3,7 +3,7 @@
 .header {
     @include desktop {
         @include desktop-padding;
-        background-color: $modal-navigation;
+        background-color: $navigation;
         display: flex;
         align-items: center;
         justify-content: space-between;
