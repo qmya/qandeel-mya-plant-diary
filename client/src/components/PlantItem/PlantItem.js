@@ -48,8 +48,6 @@ class PlantItem extends React.Component {
       .then((result) => {
         this.props.getData();
       });
-
-    console.log(this.state.startDate);
   }
 
   render() {
@@ -66,22 +64,17 @@ class PlantItem extends React.Component {
       );
     }
     let between = 0;
-    console.log(new Date(this.props.lastwatereddate));
     if (this.props.lastwatereddate !== "") {
       let day = Date.now() - new Date(this.props.lastwatereddate).getTime();
       between = Math.floor(day / (24 * 60 * 60 * 1000));
-      console.log(between);
     }
 
     if (between >= 6) {
       plantImg = plantBad;
-      console.log(plantImg);
     } else if (between >= 3) {
       plantImg = plantOk;
-      console.log(plantImg);
     } else if (between >= 0) {
       plantImg = plantGood;
-      console.log(plantImg);
     }
 
     return (

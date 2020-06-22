@@ -23,8 +23,6 @@ const PlantModal = (props) => {
         alert("Sorry! This plant does not exist");
       });
   };
-
-  console.log(props);
   return (
     <div className="modal">
       <h2 className="modal__heading">Add Plant</h2>
