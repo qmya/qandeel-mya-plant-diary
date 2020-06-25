@@ -93,7 +93,7 @@ class PlantItem extends React.Component {
           <div className="plantitem__date">
             <form className="plantitem__form" onSubmit={this.handleSubmit}>
               <h3>
-                <label>Last Watered:</label>
+                <label className="plantitem__margin">Last Watered:</label>
               </h3>
               <DatePicker
                 selected={this.state.startDate}

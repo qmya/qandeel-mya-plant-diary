@@ -25,7 +25,7 @@ class Whoops extends React.Component {
         <div className="whoops">
           <div className="whoops__wrap">
             <h1 className="whoops__header">
-              Whoops,looks like you don't have any plants
+              Whoops, looks like you don't have any plants
             </h1>
             <p className="whoops__paragraph">
               Hit the "Add Plants" button to start adding to your list
